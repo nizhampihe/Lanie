@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+  <head>
+    <!-- General -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#323639" />
+    
+    <!-- SEO Description -->
+    <title>Website</title>
+    <meta name="description" content="Minimalist ReactJS Website Application" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="http://localhost:8000/" />
+    
+    <!-- indicates this will run in full screen mode on iOS devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- set color of top band in iOS, requires apple-mobile-web-app-capable to be set -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- auto detect phone numbers on apple devices on this page -->
+    <meta name="format-detection" content="telephone=yes" />
+    <!-- For mobile devices -->
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1"
+      user-scalable="no"
+      />
+      
+      <!-- Styling -->
+      <link rel="icon" href="/Lanie/favicon.ico" />
+      <!-- <link rel="stylesheet" href="/Lanie/style.css" /> -->
+      
+      <!-- Buat Deploy SPA di Github Page -->
+      <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    <noscript>
+      Silahkan aktifkan JavaScript terlebih dahulu untuk menjalankan Aplikasi
+    </noscript>
+    <main id="root"></main>
+    <script src="/Lanie/script.js"></script>
+  </body>
+</html>
