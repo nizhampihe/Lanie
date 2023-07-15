@@ -1,0 +1,5 @@
+# Node Package
+/node_modules
+
+# Deploy Directory
+/dist

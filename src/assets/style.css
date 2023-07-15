@@ -1,0 +1,37 @@
+:root {
+  --foreColor: #d6d6d7;
+  --backColor: #323639;
+  --backColor2: #202124;
+  --primary: #00ced1;
+  --accent: #008b8b;
+}
+
+[data-theme="dark"] {
+  --foreColor: #d6d6d7;
+  --backColor: #323639;
+  --backColor2: #202124;
+  --primary: #00ced1;
+  --accent: #008b8b;
+}
+
+* {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Oxygen", sans-serif;
+}
+
+#root {
+  font-family: "Poppins", sans-serif;
+  color: var(--foreColor);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--backColor),
+    var(--backColor2)
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
