@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#323639" />
-    
+
     <!-- SEO Description -->
     <title>Website</title>
     <meta name="description" content="Minimalist ReactJS Website Application" />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="http://localhost:8000/" />
-    
+    <link rel="canonical" href="https://nizhampihe.github.io/Lanie" />
+
     <!-- indicates this will run in full screen mode on iOS devices -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- set color of top band in iOS, requires apple-mobile-web-app-capable to be set -->
@@ -23,20 +23,26 @@
       name="viewport"
       content="initial-scale=1, maximum-scale=1"
       user-scalable="no"
-      />
-      
-      <!-- Styling -->
-      <link rel="icon" href="/Lanie/favicon.ico" />
-      <!-- <link rel="stylesheet" href="/Lanie/style.css" /> -->
-      
-      <!-- Buat Deploy SPA di Github Page -->
-      <script type="text/javascript">
+    />
+
+    <!-- Import Assets -->
+    <link rel="icon" href="/Lanie/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Oxygen:wght@700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/Lanie/style.css" /> -->
+
+    <!-- Buat Deploy SPA di Github Page -->
+    <script type="text/javascript">
       (function (l) {
         if (l.search[1] === "/") {
           var decoded = l.search
-          .slice(1)
-          .split("&")
-          .map(function (s) {
+            .slice(1)
+            .split("&")
+            .map(function (s) {
               return s.replace(/~and~/g, "&");
             })
             .join("?");
